@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividades familiares</title>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montez&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<link  rel="icon"   href="tradiWeb.png" type="image/png" />
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src='main.js'></script>
+<style type="text/css">
+	*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+font-family: 'Marck Script', cursive;
+font-family: 'Montez', cursive;
+		background-color:#C71585;
+
+}
+
+section#banner{
+	width: 100%;
+	background: url(https://presenterse.com/wp-content/uploads/2020/05/Familianumerosa-kqNH-620x349@abc.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: transparent;
+	-webkit-transition: background-color .5s;
+}
+
+nav{
+	display: table;
+	margin: auto;
+	margin-top: 15px;
+	height: 40px;
+	-webkit-transition: margin-left .5s;
+}
+
+ul{
+	display: block;
+	float: left;
+	list-style: none;
+font-family: 'Cinzel Decorative', cursive;
+}
+ul li{
+	float: left;
+	margin: 10px;
+	padding: 2px;
+}
+ul li a{
+	color: #F3F3F3;
+	text-decoration: none;
+    transition:  all 1.3s ease;
+}
+
+ul li a:hover{
+	color:#9370D8;
+}
+
+img#logo{
+	float:left;
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 150px;
+	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+
+.contenedor {
+	width: 90%;
+	max-width:900px;
+	margin:auto;
+}
+ 
+article {
+	background:rgba(24,8,33,.9);
+	padding:20px;
+	margin:20px 0;
+	color:#fff;
+	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+}
+ 
+article h2 {
+	color:#fff;
+}
+ 
+article hr {
+	background:#00FFFF;
+	height:5px;
+	border:none;
+}
+ 
+article p {
+	line-height: 25px;
+}
+ 
+article h2, article p, article hr {
+	margin-bottom: 20px;
+}
+img{
+	width: 200px;
+		float: right;
+		margin-right: 20px;
+		margin-bottom: 20px;
+}
+#tab table{
+border-style: solid;
+border-width: 2px 2px 2px 2px;
+border-color:white;
+border-spacing: 0px;
+background-color: lightcoral;
+ }
+ tbody th{
+background:PaleVioletRed;
+	font-size: large; 
+	font-weight: bolder;
+text-align: center;
+border-style: solid;
+border-width: 0.5px; 
+border-color: white;
+}
+tbody tr td{
+padding: 10px;
+text-align: center;
+border-style: solid;
+border-width: 0.5px; 
+border-color: white;
+
+}
+.picture{
+	width: 150px;
+	height:160px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="tradiciones.html">Tradición: Dia de muertos</a></li>
+				</ul>
+
+				<img id="logo" src="tradiWeb.png"> 
+
+				<ul>
+					<li><a href="actividadrsF.html">Actividad familiar</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="banner"></section>
+
+		<div class="contenedor">
+		<article><font size="4px">
+			<h2>Actividades realizadas</h2>
+			<hr>
+			<p>Durante el periodo de aislamiento que dio inicio a partir del mes de Marzo del presente año debido al virus
+			del Covid-19 , mi familia ha hecho multiples actividades que no pudimos hacer anteriormente debido a que teniamos otras ocupaciones <img src="imagenes/picture.gif" width="80px"></li>(trabajo,escuela,etc.).Los cuales se enlistan a continuación.</p><br>
+		<ol start="numero">
+			<li>Salir a caminar:<br><p>Los fines de semana saliamos a caminar por un camino lleno de arboles que estaba
+			muy cerca de mi casa para relajarnos y tomar un poco de aire fresco</p>
+
+			<li>Probar nuevas recetas:<br><p>Los fines de semana tratabamos de aprender a cocinar nuevas cosas, por ejemplo , algunas veces haciamos pizza , o postres como pasteles , gelatinas ,etc. De igual manera fue muy divertido y concidero que aprendimos un poco todos </p></li>
+
+			<li>Recordar buenos momentos a tráves de fotos:<br><p>Cuando nos pusimos a limpiar nuestra casa y acomodar todo en su lugar , encontramos muchas fotos de antaño en donde quedaron capturados buenos momentos. Por lo que nos sentabamos en el comedor a recordar todo ellos</p></li>
+			<li>Realizar un deporte:<br><p>Muchas veces jugabamos futbol o basquet en el patio de mi casa con toda mi familia
+			era muy divertido y además era muy bueno , ya que nos ejercitabamos y disfrutabamos de un buen momento en familia </p></li>
+		</ol>
+		<h2>¿Qué tan frecuente realizamos esas actividades?</h2><hr>
+         <p>Para representar la frecuencia a la que realizamos  cada actividad ,se realizó la siguiente tabla. </p>
+         <div id="tab">
+         <table>
+         	<thead>
+         	</thead>
+         	 	<tr>
+      	<th>Actividad</th>
+      	<th>Veces realizado desde Marzo a Agosto</th>
+      	<th>Fotografia</th>
+      	</tr>
+         	<tbody>
+              <tr>
+      			<td>Salir a caminar</td>
+      			<td>3 veces por semana(84 veces en total)</td>
+      			<td><img src="pic2.jpeg" class="picture"></td>
+      		</tr>
+      		<tr>
+      		<td>Probar nuevas recetas</td>
+      			<td>una vez a la semana (24 veces en total)</td>
+      			<td><img src="pic3.jpeg" class="picture"></td>
+      		</tr>
+      		<tr>
+      		<td>Recordar buenos momentos a tráves de fotos</td>
+      			<td>No lo haciamos frecuentemente , (3 veces aprocimadamente) </td>
+      		 <td><img src="pic4.jpg" class="picture"></td>
+      		</tr>
+      		<tr>
+      		<td>Realizar un deporte</td>
+      <td> 2 a 3 veces por semana (77 veces en total)</td>
+         <td><img src="pic1.jpeg" class="picture"></span></td>
+      		</tr>
+         	</tbody>
+         </table>
+
+         </div>
+</font>
+		</article>
+	
+	</div>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+ 
+	$(window).scroll(function(){
+		var barra = $(window).scrollTop();
+		var posicion = barra * 0.40;
+ 
+		$('#banner').css({
+			'background-position': '0 -' + posicion + 'px'
+		});
+	});
+ 
+});
+	</script>
+	
+</body>
+</html>

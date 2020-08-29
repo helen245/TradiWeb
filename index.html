@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+<link  rel="icon"   href="tradiWeb.png" type="image/png" />
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script >
+	$(document).ready(function(){
+
+	$("#banner").css({"height":$(window).height() + "px"});
+
+	var flag = false;
+	var scroll;
+
+	$(window).scroll(function(){
+		scroll = $(window).scrollTop();
+
+		if(scroll > 200){
+			if(!flag){
+				$("#logo").css({"margin-top": "-5px", "width": "50px","height":"50px"});
+
+				$("header").css({"background-color": "rgba(60, 60, 60, 0.73)"});
+				flag = true;
+			}
+		}else{
+			if(flag){
+				$("#logo").css({"margin-top": "150px", "width": "250px","height":"250px"});
+
+				$("header").css({"background-color": "transparent"});
+				flag = false;
+			}
+		}
+
+
+	});
+
+});</script>
+</head>
+<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="tradiciones.html">Tradición: Dia de muertos</a></li>
+				</ul>
+
+				<img id="logo" src="tradiWeb.png"> 
+
+				<ul>
+					<li><a href="actividadrsF.html">Actividad familiar</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="banner"></section>
+
+		<div class="contenedor">
+		<article>
+			<h2>¿De qué trata este sitio web?</h2>
+			<hr>
+				<p>Este sitio web habla un poco acerca de la tradición del "Día de muertos y de como se celebra en la región de Mixquiahuala de Juaréz , Hgo.
+				De igual manera , muestro algunas actividades que se realizaron dentro de mi familia durante el periodo de aislamento. Espero le guste . ¡Adelante!"</p>
+ 
+		</article>
+
+	
+    <form id="form">
+    <h2>Contactanos</h2>
+    <hr>
+	<label>Nombre*</label>
+	<input type="text" name="">
+	<label>Asunto*</label>
+	<input type="text" name="">
+	<label>Correo*</label>
+	<input type="text" name="">
+	<label class="xd">Mensaje* </label>
+	<textarea></textarea>
+	<input type="submit" class="submit" value="Enviar">
+	
+</form>
+
+	
+	</div>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+ 
+	$(window).scroll(function(){
+		var barra = $(window).scrollTop();
+		var posicion = barra * 0.40;
+ 
+		$('#banner').css({
+			'background-position': '0 -' + posicion + 'px'
+		});
+	});
+ 
+});
+	</script>
+	
+</body>
+</html>
